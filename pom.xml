@@ -41,7 +41,14 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	</dependencies>
+	
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+
+</dependencies>
 
 	<build>
 		<plugins>
@@ -50,6 +57,14 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		
+		<extensions>
+			<extension>
+				<groupId>ar.com.synergian</groupId>
+				<artifactId>wagon-git</artifactId>
+				<version>0.2.5</version>
+			</extension>
+		</extensions>
 	</build>
 
 </project>
